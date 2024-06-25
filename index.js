@@ -26,19 +26,19 @@ class Calculator {
         }
     }
 
-    logSum = (() => {
+    logSum = (function() {
         console.log (this.number1 + this.number2);
     }).bind(this);
     
-    logMul = (() => {
+    logMul = (function() {
         console.log (this.number1 * this.number2);
     }).bind(this);
     
-    logSub = (() => {
+    logSub = (function() {
         console.log (this.number1 - this.number2);
     }).bind(this);
     
-    logDiv = (() => {
+    logDiv = (function() {
         if (this.number2 === 0) {
             throw new Error ('Dividing by 0 is prohibited!');
         } else {
